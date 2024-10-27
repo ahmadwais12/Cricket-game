@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div  class="container">
+
+      <div class="container-items">
+        <h1>Bat Ball Stump Game</h1>
+      </div>
+      <div class="container-items">
+        <button class="btn" onclick="
+       let computerChoice= genrateRandomnumber();
+        let resultMsg=getResult('Bat',computerChoice) ;
+        showResult('Bat',computerChoice,resultMsg);    
+          "><img src="img/png-transparent-cricket-bats-gray-nicolls-batting-baseball-bats-graynicolls-cricket-gray-nicolls-batting-thumbnail.png" alt="Bat pic"></button>
+
+        <button class="btn" onclick="
+         computerChoice= genrateRandomnumber();
+         resultMsg=getResult('Bat',computerChoice) ;
+         showResult('Ball',computerChoice,resultMsg);
+          " ><img  src="img/png-transparent-cricket-balls-cricket-bats-grasshopper-sport-insects-sphere-thumbnail.png" alt="ball img"></button>
+
+        <button class="btn" onclick="
+         computerChoice= genrateRandomnumber();
+         resultMsg=getResult('Bat',computerChoice) ;
+         showResult('Stump',computerChoice,resultMsg);
+         "><img src="img/c7c1cabb903f7bf39753526915e4a0ab.jpg" alt=""></button>
+        
+      </div>
+       
+       <h3 id="user-move"></h3>
+       <h3 id="computer-move"></h3>
+       <h3 id="show-result"></h3>
+       <h3 id="show-score"></h3>
+       <button class="btn" onclick="
+       localStorage.clear();
+       resetScore();
+       ">Reset</button>
+
+     </div>
+     <script src="cricketJs.js"></script>
+</body>
+</html>

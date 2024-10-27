@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  font-size: 16px;
+ 
+}
+.container{
+  text-align: center;
+
+
+}
+
+.btn{
+ border: none;
+ box-shadow: 5px 5px 5px rgb(36, 35, 35);
+}
+img{
+  width: 200px;
+  height: 200px;
+}
